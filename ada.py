@@ -23,7 +23,7 @@ DEBUG = False
 
 def dbg(str):
     if DEBUG:
-        print(str)
+        print(str, file=sys.stderr)
 
 
 def process_level(data):
