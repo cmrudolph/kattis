@@ -1,6 +1,12 @@
 # https://open.kattis.com/problems/batterup
 
-input()
-at_bats = map(lambda x: int(x), input().split())
-filtered = [a for a in at_bats if a != -1]
-print(sum(filtered) / len(filtered))
+
+def main():
+    input()
+
+    at_bats = [int(a) for a in input().split() if a != "-1"]
+    print(sum(at_bats) / len(at_bats))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,8 +1,5 @@
 # https://open.kattis.com/problems/countingstars
 
-# Almost the same as https://open.kattis.com/problems/amoebas. Different
-# input format and only vertical/horizontal connections.
-
 import sys
 
 IGNORE = 0

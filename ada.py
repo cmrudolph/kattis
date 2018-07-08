@@ -1,29 +1,10 @@
 # https://open.kattis.com/problems/ada
 
-# Given N outputs of a function evaluated at evenly-spaced intervals, the
-# goal is to figure out two things:
-#   1. The minimum degree of the polynomial that will produce these outputs
-#   2. The next value in the sequence
-#
-# The basis for the solution involves calculating the differences between
-# adjacent items and knowing that this new sequence corresponds to a
-# polynomial of one degree less (the function's derivative). Eventually this
-# process will result in a sequence of identical values. This corresponds to
-# the slope of the linear expression (degree = 1) and serves as the base case
-# for our algorithm. Once we have arrived here, we work our way back up the
-# stack, calculating the next value for each sequence (a simple calculation
-# involving the previous last item and the value returned from the recursion).
-# Upon arriving back at the top we will have computed the next value in the
-# original sequence AND the depth of our recursion corresponds to the degree.
-
 import sys
-
-DEBUG = False
 
 
 def dbg(str):
-    if DEBUG:
-        print(str, file=sys.stderr)
+    print(str, file=sys.stderr)
 
 
 def process_level(data):
@@ -36,8 +17,8 @@ def process_level(data):
 
     for idx, val in enumerate(data):
         # Enumerate the entire data (original) list here. However, the
-        # constraint below serves to make sure we ignore the skip what
-        # would be the last step in our enumeration (we are accessing two
+        # constraint below serves to make sure we skip what would
+        # be the last step in our enumeration (we are accessing two
         # slots at a time so we DO look at every element.
         if idx < len(diffs):
             diffs[idx] = data[idx + 1] - data[idx]
@@ -65,25 +46,30 @@ def process_level(data):
     return my_return
 
 
-# Ignore the first integer (tells us how many). We just want the values.
-input_vals = [int(v) for v in (input().split()[1:])]
-dbg(f"Orig:{input_vals}")
+def main():
+    # Ignore the first integer (tells us how many). We just want the values.
+    input_vals = [int(v) for v in (input().split()[1:])]
+    dbg(f"Orig:{input_vals}")
 
-# Begin the recursion
-final_returned = process_level(input_vals)
+    # Begin the recursion
+    final_returned = process_level(input_vals)
 
-dbg(f"Final Ret: {final_returned}")
+    dbg(f"Final Ret: {final_returned}")
 
-degree = final_returned[0]
-returned_difference = final_returned[1]
+    degree = final_returned[0]
+    returned_difference = final_returned[1]
 
-# NewLast - OldLast = Returned
-# (rearranging some terms)
-# NewLast = Returned + OldLast
-old_last = input_vals[-1]
-new_last = returned_difference + old_last
+    # NewLast - OldLast = Returned
+    # (rearranging some terms)
+    # NewLast = Returned + OldLast
+    old_last = input_vals[-1]
+    new_last = returned_difference + old_last
 
-dbg(f"Degree: {degree}")
-dbg(f"New Last: {new_last}")
+    dbg(f"Degree: {degree}")
+    dbg(f"New Last: {new_last}")
 
-print(str(degree) + " " + str(new_last))
+    print(str(degree) + " " + str(new_last))
+
+
+if __name__ == "__main__":
+    main()

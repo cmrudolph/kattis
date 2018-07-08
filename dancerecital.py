@@ -1,25 +1,11 @@
 # https://open.kattis.com/problems/dancerecital
 
-# Given a list of dance routines (sets of dancers), figure out the minimum
-# number of "quick changes" required. A quick change is when a given dancer
-# appears in back-to-back routines. Minimizing quick changes is accomplished
-# by determining the optimal way to order the routines.
-#
-# Since the number of routines is <= 10, searching through all permutations
-# is reasonable. A naive, exhaustive search of all permutations is avoided
-# by introducing optimizations:
-#   1. Cache comparison results we have already seen.
-#   2. Abort a search once we are certain it cannot be optimal.
-
 import itertools
 import sys
 
-DEBUG = False
-
 
 def dbg(str):
-    if DEBUG:
-        print(str, file=sys.stderr)
+    print(str, file=sys.stderr)
 
 
 def main():
@@ -68,6 +54,7 @@ def main():
                 sys.exit(0)
 
     print(str(best))
+
 
 if __name__ == "__main__":
     main()

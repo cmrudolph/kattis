@@ -1,9 +1,5 @@
 # https://open.kattis.com/problems/drmmessages
 
-# Given an "encrypted" string, the goal is to decrypt it. The rules for
-# decryption involve a series of steps (divide, rotate, merge). The solution
-# involves a simple application of these rules to the input string.
-
 import sys
 
 Offset = 65
@@ -37,28 +33,33 @@ def rotate_string(s, amount):
     return ''.join(rotate_char(c, amount) for c in s)
 
 
-in_str = input()
+def main():
+    in_str = input()
 
-# STEP1: DIVIDE. Just cut the string in half.
-mid = len(in_str) // 2
-split1 = in_str[:mid]
-split2 = in_str[mid:]
+    # STEP1: DIVIDE. Just cut the string in half.
+    mid = len(in_str) // 2
+    split1 = in_str[:mid]
+    split2 = in_str[mid:]
 
-# STEP2: ROTATE. Calculate the rotation amount for each half and then
-# perform the rotations.
-rot1 = calc_string_rotation(split1)
-rot2 = calc_string_rotation(split2)
+    # STEP2: ROTATE. Calculate the rotation amount for each half and then
+    # perform the rotations.
+    rot1 = calc_string_rotation(split1)
+    rot2 = calc_string_rotation(split2)
 
-rotated1 = rotate_string(split1, rot1)
-rotated2 = rotate_string(split2, rot2)
+    rotated1 = rotate_string(split1, rot1)
+    rotated2 = rotate_string(split2, rot2)
 
-# STEP3: MERGE. Walk the strings together and let each character from
-# the second string define the rotation amount for the corresponding
-# character in the first string.
-final = []
-for ch1, ch2 in zip(rotated1, rotated2):
-    amount = ch_to_idx(ch2)
-    mod = rotate_char(ch1, amount)
-    final.append(mod)
+    # STEP3: MERGE. Walk the strings together and let each character from
+    # the second string define the rotation amount for the corresponding
+    # character in the first string.
+    final = []
+    for ch1, ch2 in zip(rotated1, rotated2):
+        amount = ch_to_idx(ch2)
+        mod = rotate_char(ch1, amount)
+        final.append(mod)
 
-print(''.join(final))
+    print(''.join(final))
+
+
+if __name__ == "__main__":
+    main()
