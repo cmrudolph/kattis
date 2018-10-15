@@ -1,5 +1,9 @@
 // https://open.kattis.com/problems/cd
 
+// OK: Solution involving walking both arrays simultaneously and looking for
+// distinct/duplicates along the way. Used C++ over Python because the latter
+// was too slow.
+
 #include <iostream>
 
 using namespace std;
@@ -40,6 +44,7 @@ int main()
 
             if (jack == jill)
             {
+                // Same. Count it and advance both.
                 duplicates++;
                 jack_idx++;
                 jill_idx++;

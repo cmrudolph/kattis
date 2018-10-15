@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/cd
 
+# SLOW: Python solution using sets to keep track of who has which CDs. This
+# solution is too slow.
+
 import sys
 
 

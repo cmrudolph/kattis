@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/countingstars
 
+# OK: Similar problem to amoebas, but recursion grew the stack too much. Using
+# iteration with a queue to visit and tag cells instead.
+
 import sys
 
 IGNORE = 0
@@ -8,6 +11,7 @@ STAR_CH = "-"
 
 
 def q_neighbors(tag_matrix, rows, cols, r, c, q):
+    # Range check stuff, see if the cell is unvisited, then queue it
     if r > 0:
         if tag_matrix[r-1][c] == NEEDS_VISIT:
             q.append((r-1, c))

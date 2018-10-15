@@ -1,3 +1,8 @@
+// https://open.kattis.com/problems/10kindsofpeople
+
+// OK: Solution involving a queue + iteration rather than recursion because the
+// latter can overflow the stack.
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,6 +12,12 @@
 #define UNVISITED_DECIMAL 1
 #define MAX_ROWS 1000
 #define MAX_COLS 1000
+
+// Kind of lame way to differentiate between decimal and binary tags (use
+// completely different ranges). We could instead keep track of which 'type' of
+// cell we are visiting when we assign a new tag and simply look up the 'type'
+// later when we need to print the result. This would let us avoid maintaining
+// distinct tags.
 #define DECIMAL_TAG_OFFSET 5000000
 
 struct q_entry
@@ -131,6 +142,10 @@ int main(void)
 
     scanf("%d", &num_cases);
 
+    // Our map is built. All that is left is to solve each of the cases. This
+    // step is trivial - all we need to do is look up the tags and see if
+    // they are the same. If same, the cells are connected. If different, they
+    // are not connected.
     for (int i = 0; i < num_cases; i++)
     {
         scanf("%d %d %d %d", &r1, &c1, &r2, &c2);

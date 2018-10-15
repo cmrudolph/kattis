@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/lineup
 
+# OK: Simple problem.
+
 import sys
 
 

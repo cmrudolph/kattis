@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/hidden
 
+# OK: Simple problem.
+
 import sys
 
 

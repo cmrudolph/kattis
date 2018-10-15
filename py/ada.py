@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/ada
 
+# OK: Simple recursive solution in Python.
+
 import sys
 
 

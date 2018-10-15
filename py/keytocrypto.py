@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/keytocrypto
 
+# OK: Straightforward application of the string manipulation rules. No
+# performance constraints, so Python is adequate.
+
 import sys
 
 Offset = 65

@@ -1,5 +1,9 @@
 # https://open.kattis.com/problems/addingwords
 
+# OK: Solution using dictionaries to provide a two-way lookup (values by terms
+# and terms by values). Each of the three instructions is handled per the rules
+# of the problem.
+
 import sys
 
 
@@ -29,6 +33,7 @@ def main():
             if old_val is not None:
                 del vals_to_terms[old_val]
 
+            # Store the new mappings
             vals_to_terms[val] = term
             terms_to_vals[term] = val
 
@@ -52,6 +57,9 @@ def main():
             if found_unknown:
                 print(' '.join(words[1:]) + " unknown")
             else:
+                # Treat the entire expression as a string and 'eval' it. This
+                # lets us lean on the Python interpreter to do the math for us
+                # since the thing is already in a # + # - # + # form.
                 result_val = eval(' '.join(map(lambda x: str(x), expr_list)))
                 result_term = vals_to_terms.get(result_val, "unknown")
                 print(' '.join(words[1:]) + " " + str(result_term))

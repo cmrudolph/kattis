@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/whatdoesthefoxsay
 
+# OK: Simple problem.
+
 import sys
 
 

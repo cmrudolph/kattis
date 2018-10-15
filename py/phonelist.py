@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/phonelist
 
+# OK: Simple problem.
+
 import sys
 
 

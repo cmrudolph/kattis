@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/batterup
 
+# OK: Simple. Use a list comprehension to map strings to integers then do
+# simple math on the list.
+
 
 def main():
     input()

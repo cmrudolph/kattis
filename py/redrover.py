@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/redrover
 
+# OK: Simple problem.
+
 import sys
 
 

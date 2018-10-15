@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/lost
 
+# OK: Interesting graph problem. We traverse the graph using recursion to
+# compute all our costs and then sum them up to determine the overall min.
+
 import sys
 import json
 

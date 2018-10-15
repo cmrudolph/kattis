@@ -1,5 +1,10 @@
 # https://open.kattis.com/problems/amoebas
 
+# OK: Solution that works through the search space using recursion, tagging
+# cells along the way. In principle, recursion can overflow the stack in these
+# types of problems, but the search space here is sufficiently small that it
+# is okay.
+
 import sys
 
 IGNORE = 0

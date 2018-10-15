@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/dancerecital
 
+# SLOW: Same algorithm as the C++ solution using permutations, but runs too
+# slowly in Python.
+
 import itertools
 import sys
 

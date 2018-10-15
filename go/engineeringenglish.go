@@ -1,5 +1,9 @@
 // https://open.kattis.com/problems/engineeringenglish
 
+// OK: Solution involving iterating over the strings in the input and using
+// a map to store values we have seen before. A value's existence in the map
+// means we need to replace it with our token value.
+
 package main
 
 import (

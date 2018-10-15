@@ -1,5 +1,9 @@
 # https://open.kattis.com/problems/rainfall2
 
+# OK: Interesting problem where we piece together the formula, then run
+# a guess through it, compare, and refine the guess. Repeating this enough
+# times gets us to right value for our unknown.
+
 import sys
 
 ITERATIONS = 1000
@@ -12,11 +16,13 @@ def dbg(str):
 def main():
     leak_level, leak_rate, t1, t2, obs = [float(x) for x in input().split()]
 
-    # If we are below the leak, we know exactly how much rain fell
+    # If we are below the leak, we know EXACTLY how much rain fell
     if obs < leak_level:
         print(f"{obs:.6f} {obs:.6f}")
         sys.exit(0)
 
+    # If we are exactly at the leak level, we are confident that value is
+    # our minimum (it was at least this much).
     min_rain = None
     if obs == leak_level:
         min_rain = obs
@@ -25,6 +31,7 @@ def main():
     high = 10000000
     guess = high
 
+    # Run the guess/compare/refine loop enough times to get an accurate result
     for i in range(ITERATIONS):
         rate = guess / t1
         t1_pre_leak = leak_level / rate
@@ -40,9 +47,11 @@ def main():
             f"HIGH:{high:.3f}; CURR:{guess:.3f}; OBS:{obs_guess:.3f}")
 
         if obs_guess > obs:
+            # Too high - lower the guess
             high = guess
             guess = (high + low) / 2
         else:
+            # Too low - raise the guess
             low = guess
             guess = (high + low) / 2
 

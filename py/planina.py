@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/planina
 
+# OK: Simple problem.
+
 import math
 
 

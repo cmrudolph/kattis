@@ -1,11 +1,15 @@
 // https://open.kattis.com/problems/inversefactorial
 
+// SLOW: Solution involving repeated long division. While conceptually sound,
+// this approach is computationally expensive and runs for too long on
+// official judging machines.
+
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Perform long division on arbitrarily-long values represented as strings. This implementation
-does not care about remainders as the problem constraints ensure the division will always work
-out with whole number results */
+// Perform long division on arbitrarily-long values represented as strings.
+// This implementation does not care about remainders as the problem constraints
+// ensure the division will always work out with whole number results
 void longdiv(char* dividend, int divisor, char* quotient)
 {
     int temp = 0;

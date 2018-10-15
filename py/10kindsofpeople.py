@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/10kindsofpeople
 
+# SLOW: Same algorithm as the C implementation. The Python version was simply
+# too slow when run on the judging machines.
+
 import sys
 
 UNINITIALIZED = -1

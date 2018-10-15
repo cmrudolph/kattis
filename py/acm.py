@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/acm
 
+# OK: This problem has no performance issues, so Python is adequate.
+
 import sys
 
 

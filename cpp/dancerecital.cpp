@@ -1,5 +1,8 @@
 // https://open.kattis.com/problems/dancerecital
 
+// OK: Solution involving testing permutations (N is small enough). Used C++
+// over Python because the latter was too slow.
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

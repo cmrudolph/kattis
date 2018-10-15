@@ -1,5 +1,7 @@
 # https://open.kattis.com/problems/saxophone
 
+# OK: Simple problem.
+
 import sys
 
 

@@ -1,5 +1,8 @@
 # https://open.kattis.com/problems/foosball
 
+# OK: Problem has no performance requirements, so Python is fine. Work
+# through the rules, maintaining state properly as we go.
+
 import sys
 
 

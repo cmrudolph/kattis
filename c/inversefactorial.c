@@ -1,5 +1,8 @@
 // https://open.kattis.com/problems/inversefactorial
 
+// OK: Solution involving logs and taking advantage of the fact we can identify
+// the answer based on the number of digits in the factorial string.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
