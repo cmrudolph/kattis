@@ -1,9 +1,12 @@
-// https://open.kattis.com/problems/balanceddiet
-
-// OK: Solution involving recursion to figure out all the possible sums we can encounter by combining
-// values in all possible ways. Without any optimizations, this solution runs in O(2^N) time. However,
-// the problem is conducive to dynamic programming since once a subproblem has been solved we can
-// save the result and use it repeatedly.
+// NAME : Balanced Diet
+// URL  : https://open.kattis.com/problems/balanceddiet
+// =============================================================================
+// Use recursion to figure out all the possible sums we can encounter by
+// combining values in all possible ways. Without any optimizations this
+// solution is O(2<sup>N</sup>). However, the problem is conducive to dynamic
+// programming since once a subproblem has been solved we can save the result
+// leverage it to avoid redundant work.
+// =============================================================================
 
 #include <stdio.h>
 #include <stdlib.h>

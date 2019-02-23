@@ -1,8 +1,10 @@
-// https://open.kattis.com/problems/almostperfect
-
-// OK: Solution involving computing all factor pairs of the specified value using
-// a division test. The factors are then summed and compared to the value to
-// determine which result is most relevant (exact, almost, none).
+// NAME : Almost Perfect
+// URL  : https://open.kattis.com/problems/almostperfect
+// =============================================================================
+// Compute all factor pairs of the specified value using a division test. The
+// factors are then summed and compared to the original value to determine
+// which conclusion is most relevant (exact, almost, none).
+// =============================================================================
 
 package main
 

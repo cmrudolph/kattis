@@ -1,8 +1,10 @@
-// https://open.kattis.com/problems/cd
-
-// OK: Solution involving walking both arrays simultaneously and looking for
-// distinct/duplicates along the way. Used C++ over Python because the latter
+// NAME : CD
+// URL  : https://open.kattis.com/problems/cd
+// =============================================================================
+// Simple solution involving walking both arrays simultaneously and looking for
+// distinct/duplicates along the way. Chose C++ over Python because the latter
 // was too slow.
+// =============================================================================
 
 #include <iostream>
 

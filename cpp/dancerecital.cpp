@@ -1,7 +1,9 @@
-// https://open.kattis.com/problems/dancerecital
-
-// OK: Solution involving testing permutations (N is small enough). Used C++
-// over Python because the latter was too slow.
+// NAME : Dance Recital
+// URL  : https://open.kattis.com/problems/dancerecital
+// =============================================================================
+// Brute forcing all permutations is viable because N is small enough. Chose
+// C++ over Python because the latter was too slow.
+// =============================================================================
 
 #include <iostream>
 #include <vector>

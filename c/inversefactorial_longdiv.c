@@ -1,8 +1,10 @@
-// https://open.kattis.com/problems/inversefactorial
-
-// SLOW: Solution involving repeated long division. While conceptually sound,
-// this approach is computationally expensive and runs for too long on
-// official judging machines.
+// NAME : Inverse Factorial - Long Division
+// URL  : https://open.kattis.com/problems/inversefactorial
+// =============================================================================
+// Use repeated long division. While conceptually sound, this approach is
+// computationally expensive and runs for too long on official judging
+// machines.
+// =============================================================================
 
 #include <stdio.h>
 #include <stdlib.h>

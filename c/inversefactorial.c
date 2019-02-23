@@ -1,7 +1,10 @@
-// https://open.kattis.com/problems/inversefactorial
-
-// OK: Solution involving logs and taking advantage of the fact we can identify
-// the answer based on the number of digits in the factorial string.
+// NAME : Inverse Factorial
+// URL  : https://open.kattis.com/problems/inversefactorial
+// =============================================================================
+// Special case the first few factorial cases. After that use logs and take
+// advantage of the fact we can identify the answer based on the number of
+// digits in the factorial string.
+// =============================================================================
 
 #include <stdio.h>
 #include <stdlib.h>

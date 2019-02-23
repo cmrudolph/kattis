@@ -1,6 +1,8 @@
-// https://open.kattis.com/problems/bitbybit
-
-// OK: Read and process each instruction, modifying the bits as we go.
+// NAME : Bit by Bit
+// URL  : https://open.kattis.com/problems/bitbybit
+// =============================================================================
+// Read and process each instruction, modifying the bits as we go.
+// =============================================================================
 
 package main
 

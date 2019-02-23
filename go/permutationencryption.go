@@ -1,8 +1,9 @@
-// https://open.kattis.com/problems/permutationencryption
-
-// OK: Solution involving enumeration of the string to 'encrypt' while repeatedly
-// looping over the key string. The key string drives character selection as we
-// build up the result.
+// NAME : Permutation Encryption
+// URL  : https://open.kattis.com/problems/permutationencryption
+// =============================================================================
+// Iterate over the string to 'encrypt' while repeatedly looping over the key
+// string. The key string drives character selection as we build up the result.
+// =============================================================================
 
 package main
 

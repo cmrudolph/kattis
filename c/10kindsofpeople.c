@@ -1,7 +1,11 @@
-// https://open.kattis.com/problems/10kindsofpeople
-
-// OK: Solution involving a queue + iteration rather than recursion because the
-// latter can overflow the stack.
+// NAME : 10 Kinds of People
+// URL  : https://open.kattis.com/problems/10kindsofpeople
+// =============================================================================
+// Use a queue and iterative search to identify which cells are connected to
+// each other. A recursive solution is problematic because it can overflow
+// the stack given the right inputs. Once we have tagged contiguous sections
+// of like cells we are prepared to give answers to connectivity questions.
+// =============================================================================
 
 #include <stdio.h>
 #include <stdlib.h>
