@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // Perform long division on arbitrarily-long values represented as strings.
 // This implementation does not care about remainders as the problem constraints

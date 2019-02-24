@@ -77,7 +77,7 @@ int main(void)
 
     for (int r = 0; r < rows; r++)
     {
-        scanf("%s", &line);
+        scanf("%s", (char *)&line);
 
         for (int c = 0; c < cols; c++)
         {
