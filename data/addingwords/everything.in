@@ -1,0 +1,19 @@
+def a 1
+def b 2
+def c 3
+def d 4
+def e 5
+def f 6
+def g 7
+def h 8
+def i 9
+def j 10
+def k 11
+def l 12
+def m 13
+def n 14
+def o 15
+def total 120
+calc a + b + c + d + e + f + g + h + i + j + k + l + m + n + o =
+clear
+calc a + b + c + d + e + f + g + h + i + j + k + l + m + n + o =
