@@ -1,4 +1,8 @@
-# https://open.kattis.com/problems/throwns
+# NAME : Game of Throwns
+# URL  : https://open.kattis.com/problems/throwns
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 from collections import deque
 

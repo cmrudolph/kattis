@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/hidden
-
-# OK: Simple problem.
+# NAME : Hidden Password
+# URL  : https://open.kattis.com/problems/hidden
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 import sys
 

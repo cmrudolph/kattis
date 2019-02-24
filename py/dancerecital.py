@@ -1,7 +1,9 @@
-# https://open.kattis.com/problems/dancerecital
-
-# SLOW: Same algorithm as the C++ solution using permutations, but runs too
-# slowly in Python.
+# NAME : Dance Recital
+# URL  : https://open.kattis.com/problems/dancerecital
+# =============================================================================
+# Brute forcing all permutations is viable because N is small enough. Python
+# is too slow on official machines.
+# =============================================================================
 
 import itertools
 import sys

@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/lineup
-
-# OK: Simple problem.
+# NAME : Line Them Up
+# URL  : https://open.kattis.com/problems/lineup
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 import sys
 

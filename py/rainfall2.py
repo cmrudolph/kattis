@@ -1,8 +1,10 @@
-# https://open.kattis.com/problems/rainfall2
-
-# OK: Interesting problem where we piece together the formula, then run
+# NAME : Rain Fall
+# URL  : https://open.kattis.com/problems/rainfall2
+# =============================================================================
+# Interesting problem where we piece together the formula, then run
 # a guess through it, compare, and refine the guess. Repeating this enough
 # times gets us to right value for our unknown.
+# =============================================================================
 
 import sys
 

@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/redrover
-
-# OK: Simple problem.
+# NAME : Red Rover
+# URL  : https://open.kattis.com/problems/redrover
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 import sys
 

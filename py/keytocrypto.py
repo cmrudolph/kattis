@@ -1,7 +1,9 @@
-# https://open.kattis.com/problems/keytocrypto
-
-# OK: Straightforward application of the string manipulation rules. No
+# NAME : The Key to Cryptography
+# URL  : https://open.kattis.com/problems/keytocrypto
+# =============================================================================
+# Straightforward application of the string manipulation rules. No
 # performance constraints, so Python is adequate.
+# =============================================================================
 
 import sys
 

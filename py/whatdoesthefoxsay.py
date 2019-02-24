@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/whatdoesthefoxsay
-
-# OK: Simple problem.
+# NAME : What does the fox say?
+# URL  : https://open.kattis.com/problems/whatdoesthefoxsay
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 import sys
 

@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/acm
-
-# OK: This problem has no performance issues, so Python is adequate.
+# NAME : ACM Contest Scoring
+# URL  : https://open.kattis.com/problems/acm
+# =============================================================================
+# Simple problem with no significant performance requirements.
+# =============================================================================
 
 import sys
 

@@ -1,7 +1,9 @@
-# https://open.kattis.com/problems/lost
-
-# OK: Interesting graph problem. We traverse the graph using recursion to
+# NAME : Lost in Translation
+# URL  : https://open.kattis.com/problems/lost
+# =============================================================================
+# Interesting graph problem. We traverse the graph using recursion to
 # compute all our costs and then sum them up to determine the overall min.
+# =============================================================================
 
 import sys
 import json

@@ -1,7 +1,13 @@
-# https://open.kattis.com/problems/10kindsofpeople
-
-# SLOW: Same algorithm as the C implementation. The Python version was simply
-# too slow when run on the judging machines.
+# NAME : 10 Kinds of People
+# URL  : https://open.kattis.com/problems/10kindsofpeople
+# =============================================================================
+# Use a queue and iterative search to identify which cells are connected to
+# each other. A recursive solution is problematic because it can overflow
+# the stack given the right inputs. Once we have tagged contiguous sections
+# of like cells we are prepared to give answers to connectivity questions.
+# This is the same as the solution implemented in C, but the Python version
+# runs too slowly.
+# =============================================================================
 
 import sys
 

@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/saxophone
-
-# OK: Simple problem.
+# NAME : Eb Alto Saxophone Player
+# URL  : https://open.kattis.com/problems/saxophone
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 import sys
 

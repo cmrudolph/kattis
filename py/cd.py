@@ -1,7 +1,9 @@
-# https://open.kattis.com/problems/cd
-
-# SLOW: Python solution using sets to keep track of who has which CDs. This
-# solution is too slow.
+# NAME : CD
+# URL  : https://open.kattis.com/problems/cd
+# =============================================================================
+# Simple solution involving walking both arrays simultaneously and looking for
+# distinct/duplicates along the way. Python is too slow on official machines.
+# =============================================================================
 
 import sys
 

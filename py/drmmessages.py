@@ -1,7 +1,9 @@
-# https://open.kattis.com/problems/drmmessages
-
-# OK: Straightforward application of the string manipulation rules. No
+# NAME : DRM Messages
+# URL  : https://open.kattis.com/problems/drmmessages
+# =============================================================================
+# Straightforward application of the string manipulation rules. No
 # performance constraints, so Python is adequate.
+# =============================================================================
 
 import sys
 

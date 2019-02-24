@@ -1,7 +1,9 @@
-# https://open.kattis.com/problems/countingstars
-
-# OK: Similar problem to amoebas, but recursion grew the stack too much. Using
+# NAME : Counting Stars
+# URL  : https://open.kattis.com/problems/countingstars
+# =============================================================================
+# Similar problem to amoebas, but recursion grew the stack too much. Using
 # iteration with a queue to visit and tag cells instead.
+# =============================================================================
 
 import sys
 

@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/calculator
-
+# NAME : Calculator
+# URL  : https://open.kattis.com/problems/calculator
+# =============================================================================
 # Leverage Python's eval function to make this simple.
+# =============================================================================
 
 import sys
 

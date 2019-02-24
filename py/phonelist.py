@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/phonelist
-
-# OK: Simple problem.
+# NAME : Phone List
+# URL  : https://open.kattis.com/problems/phonelist
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 import sys
 

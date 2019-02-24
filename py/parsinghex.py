@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/parsinghex
-
+# NAME : Parsing Hex
+# URL  : https://open.kattis.com/problems/parsinghex
+# =============================================================================
 # Extract hex strings using a regex.
+# =============================================================================
 
 import sys
 import re

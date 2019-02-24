@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/planina
-
-# OK: Simple problem.
+# NAME : Planina
+# URL  : https://open.kattis.com/problems/planina
+# =============================================================================
+# Simple problem.
+# =============================================================================
 
 import math
 

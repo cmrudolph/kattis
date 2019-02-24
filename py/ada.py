@@ -1,6 +1,8 @@
-# https://open.kattis.com/problems/ada
-
-# OK: Simple recursive solution in Python.
+# NAME : The Calculus of Ada
+# URL  : https://open.kattis.com/problems/ada
+# =============================================================================
+# Simple recursive implementation with no significant performance requirements.
+# =============================================================================
 
 import sys
 

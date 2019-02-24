@@ -1,8 +1,10 @@
-# https://open.kattis.com/problems/addingwords
-
-# OK: Solution using dictionaries to provide a two-way lookup (values by terms
-# and terms by values). Each of the three instructions is handled per the rules
-# of the problem.
+# NAME : Adding Words
+# URL  : https://open.kattis.com/problems/addingwords
+# =============================================================================
+# Use dictionaries to provide a two-way lookup (values by terms and terms by
+# values). Each of the three instructions is handled per the rules of the
+# problem.
+# =============================================================================
 
 import sys
 
