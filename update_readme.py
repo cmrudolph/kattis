@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import glob
 import os
 import re
@@ -33,7 +35,7 @@ if __name__ == "__main__":
     markdown = []
 
     for ext in types:
-        files.extend(glob.glob("*/*." + ext))
+        files.extend(glob.glob(f"{ext}/*.*"))
 
     files = [f.replace("\\", "/") for f in files]
     for file in files:
