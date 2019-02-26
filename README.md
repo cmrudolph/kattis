@@ -13,6 +13,9 @@ Use dictionaries to provide a two-way lookup (values by terms and terms by value
 **Almost Perfect | Go** | [Problem](https://open.kattis.com/problems/almostperfect) | [Solution](go/almostperfect.go)</br>
 Compute all factor pairs of the specified value using a division test. The factors are then summed and compared to the original value to determine which conclusion is most relevant (exact, almost, none).
 </br></br>
+**Anagram Counting | Python** | [Problem](https://open.kattis.com/problems/anagramcounting) | [Solution](py/anagramcounting.py)</br>
+Calculate the total as n! / (n<sub>1</sub>!n<sub>2</sub>!...n<sub>k</sub>!) where the denominator is the product of the factorials of the number of occurrences of each distinct character in the input sequence.
+</br></br>
 **Balanced Diet | C** | [Problem](https://open.kattis.com/problems/balanceddiet) | [Solution](c/balanceddiet.c)</br>
 Use recursion to figure out all the possible sums we can encounter by combining values in all possible ways. Without any optimizations this solution is O(2<sup>N</sup>). However, the problem is conducive to dynamic programming since once a subproblem has been solved we can save the result leverage it to avoid redundant work.
 </br></br>
@@ -75,6 +78,9 @@ Interesting graph problem. We traverse the graph using recursion to compute all 
 </br></br>
 **Parsing Hex | Python** | [Problem](https://open.kattis.com/problems/parsinghex) | [Solution](py/parsinghex.py)</br>
 Extract hex strings using a regex.
+</br></br>
+**Passing Secrets | Python** | [Problem](https://open.kattis.com/problems/passingsecrets) | [Solution](py/passingsecrets.py)</br>
+Undirected, weighted graph problem where we want the shortest route between two specific nodes. Start by building the graph representation of the problem domain based on the inputs. Then apply Dijkstra's algorithm to identify the shortest paths from the starting node to everything else. Finally consult the search results to retrace our steps to get to the end node optimally.
 </br></br>
 **Permutation Encryption | Go** | [Problem](https://open.kattis.com/problems/permutationencryption) | [Solution](go/permutationencryption.go)</br>
 Iterate over the string to 'encrypt' while repeatedly looping over the key string. The key string drives character selection as we build up the result.
