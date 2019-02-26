@@ -23,7 +23,7 @@ class Entry:
     prev = None
 
     def __str__(self):
-        return f"I:{self.idx}; V:{self.visited}; C:{self.cost}; P:{self.prev}"
+        return f"V:{self.visited}; C:{self.cost}; P:{self.prev}"
 
 
 def dbg(str):
