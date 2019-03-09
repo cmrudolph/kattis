@@ -13,6 +13,9 @@ Straightforward 2D array manipulation problem where we must adjust both coordina
 **Adding Words | Python** | [Problem](https://open.kattis.com/problems/addingwords) | [Solution](py/addingwords.py)</br>
 Use dictionaries to provide a two-way lookup (values by terms and terms by values). Each of the three instructions is handled per the rules of the problem.
 </br></br>
+**All Different Directions | Python** | [Problem](https://open.kattis.com/problems/alldifferentdirections) | [Solution](py/alldifferentdirections.py)</br>
+Read distances and angles and use basic trig to calculate destinations. Average the destinations once all inputs have been processed.
+</br></br>
 **Almost Perfect | Go** | [Problem](https://open.kattis.com/problems/almostperfect) | [Solution](go/almostperfect.go)</br>
 Compute all factor pairs of the specified value using a division test. The factors are then summed and compared to the original value to determine which conclusion is most relevant (exact, almost, none).
 </br></br>
