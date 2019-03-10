@@ -13,29 +13,21 @@ def dbg(str):
     print(str, file=sys.stderr)
 
 
-def recurse(graph, all_visited, curr_visited, safe, curr_key):
-    if curr_key in all_visited:
-        return
+def recurse(graph, history, solved, curr):
+    if curr in solved:
+        return solved[curr]
 
-    if curr_key in curr_visited:
-        # Cycle detected. All cities participating in this cycle are safe.
-        # This set consists of all cities between the first and second
-        # sighting of the city we just noticed for a second time.
-        seen_curr = False
-        for s in curr_visited:
-            if s == curr_key:
-                seen_curr = True
-            if seen_curr and s not in safe:
-                safe.add(s)
-        return
+    if curr in graph:
+        for neighbor in graph[curr]:
+            if neighbor in history:
+                solved[neighbor] = True
+                return True
+            if recurse(graph, history | {neighbor}, solved, neighbor):
+                solved[neighbor] = True
+                return True
 
-    # Recursively visit the connected nodes in the graph
-    curr_visited.append(curr_key)
-    if curr_key in graph:
-        for dest in graph[curr_key]:
-            recurse(graph, all_visited, curr_visited, safe, dest)
-    curr_visited.pop()
-    all_visited.add(curr_key)
+    solved[curr] = False
+    return False
 
 
 def main():
@@ -48,10 +40,10 @@ def main():
         o, d = input().strip().split()
 
         # Map names to integers to make keyed lookups faster
-        if not o in city_to_idx:
+        if o not in city_to_idx:
             city_to_idx[o] = next_idx
             next_idx += 1
-        if not d in city_to_idx:
+        if d not in city_to_idx:
             city_to_idx[d] = next_idx
             next_idx += 1
 
@@ -61,15 +53,14 @@ def main():
 
     all_visited = set()
     curr_visited = []
-    safe = set()
-
-    for key in graph:
-        recurse(graph, all_visited, curr_visited, safe, key)
+    solved = dict()
 
     for line in sys.stdin:
         line = line.strip()
         idx = city_to_idx[line]
-        status = "safe" if idx in safe else "trapped"
+        history = {idx}
+        safe = recurse(graph, history, solved, idx)
+        status = "safe" if safe is True else "trapped"
         print(line, status)
 
 

@@ -103,6 +103,9 @@ Interesting problem where we piece together the formula, then run a guess throug
 **Red Rover | Python** | [Problem](https://open.kattis.com/problems/redrover) | [Solution](py/redrover.py)</br>
 Simple problem.
 </br></br>
+**Running MoM | Python** | [Problem](https://open.kattis.com/problems/runningmom) | [Solution](py/runningmom.py)</br>
+Weighted graph problem where DFS can be used to identify cycles and the cycles serve as the basis for identifying "safe" cities in the analysis.
+</br></br>
 **Sheba's Amoebas | Python** | [Problem](https://open.kattis.com/problems/amoebas) | [Solution](py/amoebas.py)</br>
 Work through the search space using recursion, tagging cells along the way. In principle, recursion can overflow the stack in these types of problems, but the search space here is sufficiently small that it is okay.
 </br></br>
