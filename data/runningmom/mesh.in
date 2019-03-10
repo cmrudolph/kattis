@@ -1,4 +1,4 @@
-9
+12
 A B
 A C
 A D
@@ -8,6 +8,9 @@ B D
 C A
 C B
 C D
+D A
+D B
+D C
 A
 B
 C

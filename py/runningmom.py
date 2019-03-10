@@ -3,6 +3,9 @@
 # =============================================================================
 # Weighted graph problem where DFS can be used to identify cycles and the
 # cycles serve as the basis for identifying "safe" cities in the analysis.
+# Recursion doesn't fly here because of stack size limits, so an iterative
+# approach is used. History tracking is required since we need to be able to
+# trace the path we have taken when analyzing cycles.
 # =============================================================================
 
 import sys
@@ -15,24 +18,32 @@ def dbg(str):
 
 def dfs(graph, all_visited, safe, start):
     # Iterative DFS to avoid recursion limits
-    stack = [start]
+    stack = [(start, [start])]
+    hist_set = {start}
     while len(stack) > 0:
-        curr = stack[-1]
-        if curr in all_visited:
+        top = stack[-1]
+        top_vertex = top[0]
+        top_history = top[1]
+        if top_vertex in all_visited:
             # Avoid redundant work.
             stack.pop()
         else:
-            all_visited.add(curr)
-            for neighbor in graph.get(curr, set()):
-                if neighbor in stack:
-                    # Found a cycle. All cities from the first sighting to
-                    # the second sighting are considered safe.
-                    idx = stack.index(neighbor)
-                    for s in stack[idx:]:
-                        safe.add(s)
-                elif neighbor not in all_visited:
+            all_visited.add(top_vertex)
+            for neighbor in graph.get(top_vertex, set()):
+                if neighbor in hist_set:
+                    cycle_detected = False
+                    for hist in top_history:
+                        if hist == neighbor:
+                            # Found a cycle. All cities from the first sighting to
+                            # the second sighting are considered safe.
+                            cycle_detected = True
+                        if cycle_detected:
+                            if hist not in safe:
+                                safe.add(hist)
+                if neighbor not in all_visited:
                     # Unvisited neighbor - push it to visit later.
-                    stack.append(neighbor)
+                    stack.append((neighbor, top_history + [neighbor]))
+                    hist_set.add(neighbor)
 
 
 def main():
