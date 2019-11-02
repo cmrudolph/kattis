@@ -115,6 +115,9 @@ Simple recursive implementation with no significant performance requirements.
 **The Key to Cryptography | Python** | [Problem](https://open.kattis.com/problems/keytocrypto) | [Solution](py/keytocrypto.py)</br>
 Straightforward application of the string manipulation rules. No performance constraints, so Python is adequate.
 </br></br>
+**Watersheds | Python** | [Problem](https://open.kattis.com/problems/watersheds) | [Solution](py/watersheds.py)</br>
+Graph problem based on a 2D array concept. Cells are conditionally connected based on rules (relationships simulating height differences), which produce sets of distinct drainage basins. Said basins need to be identified and labeled. Solved by defining the graph using adjacency lists, then traversing and labeling contiguous sections.
+</br></br>
 **What does the fox say? | Python** | [Problem](https://open.kattis.com/problems/whatdoesthefoxsay) | [Solution](py/whatdoesthefoxsay.py)</br>
 Simple problem.
 </br></br>
