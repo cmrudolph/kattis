@@ -47,6 +47,7 @@ if __name__ == "__main__":
     TEMP_ROOT = "tmp"
     PYTHON = "python3"
     GO = "go"
+    MONO = "mono"
 
     init(convert=True)
 
@@ -70,12 +71,14 @@ if __name__ == "__main__":
         run_args = [EXE_ROOT + "/" + problem]
     elif args.sourcefile.endswith(".c"):
         run_args = [EXE_ROOT + "/" + problem]
+    elif args.sourcefile.endswith(".fs"):
+        run_args = [MONO, EXE_ROOT + "/" + problem + ".exe"]
     elif args.sourcefile.endswith(".go"):
         run_args = [EXE_ROOT + "/" + problem]
     elif args.sourcefile.endswith(".cs"):
         run_args = [EXE_ROOT + "/" + problem]
 
-    pathlib.Path(temp_path).mkdir(parents=True, exist_ok=True) 
+    pathlib.Path(temp_path).mkdir(parents=True, exist_ok=True)
 
     in_search_path = data_path + "/*.in"
     in_files = glob.glob(in_search_path)

@@ -29,6 +29,7 @@ _LANGUAGE_GUESS = {
     '.cpp': 'C++',
     '.cs': 'C#',
     '.cxx': 'C++',
+    '.fs': 'F#',
     '.go': 'Go',
     '.h': 'C++',
     '.hs': 'Haskell',
@@ -65,7 +66,10 @@ def get_config():
     if os.path.exists(_DEFAULT_CONFIG):
         cfg.read(_DEFAULT_CONFIG)
 
-    if not cfg.read(['/home/chris/.kattisrc', 'C:/Chris/Dropbox/Private/.kattisrc']):
+    if not cfg.read([
+        '/home/chris/.kattisrc',
+        'C:/Chris/Dropbox/Private/.kattisrc',
+        '/mnt/c/Chris/Dropbox/Private/.kattisrc']):
         raise ConfigError('''\
 I failed to read in a config file from your home directory or from the
 same directory as this script. Please go to your Kattis installation

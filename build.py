@@ -6,7 +6,7 @@ import os
 import util
 
 
-dirs = ["c", "cpp", "go", "py"]
+dirs = ["c", "cpp", "fs", "go", "py"]
 
 
 if __name__ == "__main__":

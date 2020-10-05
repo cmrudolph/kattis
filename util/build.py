@@ -23,6 +23,8 @@ def build(source_base, exe_base, source_files):
         elif s.endswith(".cpp"):
             build_args = ["g++", "-g", "-O2", "-static", "-std=gnu++17", "-o",
                           exe_path, source_path]
+        elif s.endswith(".fs"):
+            build_args = ["fsharpc", source_path, "-o", exe_path + ".exe"]
         elif s.endswith(".go"):
             build_args = ["gccgo", "-g", "-static-libgcc", "-o", exe_path,
                           source_path]
