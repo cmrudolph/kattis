@@ -4,6 +4,9 @@ Use a queue and iterative search to identify which cells are connected to each o
 **10 Kinds of People | Python** | [Problem](https://open.kattis.com/problems/10kindsofpeople) | [Solution](py/10kindsofpeople.py)</br>
 Use a queue and iterative search to identify which cells are connected to each other. A recursive solution is problematic because it can overflow the stack given the right inputs. Once we have tagged contiguous sections of like cells we are prepared to give answers to connectivity questions. This is the same as the solution implemented in C, but the Python version runs too slowly.
 </br></br>
+**A Different Problem | F#** | [Problem](https://open.kattis.com/problems/different) | [Solution](fs/different.fs)</br>
+Test problem to get F# environment working
+</br></br>
 **ACM Contest Scoring | Python** | [Problem](https://open.kattis.com/problems/acm) | [Solution](py/acm.py)</br>
 Simple problem with no significant performance requirements.
 </br></br>
@@ -102,6 +105,9 @@ Interesting problem where we piece together the formula, then run a guess throug
 </br></br>
 **Red Rover | Python** | [Problem](https://open.kattis.com/problems/redrover) | [Solution](py/redrover.py)</br>
 Simple problem.
+</br></br>
+**Reversed Binary Numbers | F#** | [Problem](https://open.kattis.com/problems/reversebinary) | [Solution](fs/reversebinary.fs)</br>
+Simple problem to apply basic concepts of F#. Solution involves simple string/integer conversions and string manipulation, lending itself to a set of simple functions chained together in a pipeline.
 </br></br>
 **Running MoM | Python** | [Problem](https://open.kattis.com/problems/runningmom) | [Solution](py/runningmom.py)</br>
 Weighted graph problem where DFS can be used to identify cycles and the cycles serve as the basis for identifying "safe" cities in the analysis.

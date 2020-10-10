@@ -8,6 +8,7 @@ types = {
     "c": "C",
     "cpp": "C++",
     "cs": "C#",
+    "fs": "F#",
     "go": "Go",
     "py": "Python"
 }
