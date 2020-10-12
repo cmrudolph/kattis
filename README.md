@@ -10,6 +10,9 @@ Test problem to get F# environment working
 **ACM Contest Scoring | Python** | [Problem](https://open.kattis.com/problems/acm) | [Solution](py/acm.py)</br>
 Simple problem with no significant performance requirements.
 </br></br>
+**ASCII Addition | F#** | [Problem](https://open.kattis.com/problems/asciiaddition) | [Solution](fs/asciiaddition.fs)</br>
+Not a difficult problem to understand. Lots of array extraction and transformation. First "real" problem done in F#, so language learning curve applied.
+</br></br>
 **ASCII Figure Rotation | Python** | [Problem](https://open.kattis.com/problems/asciifigurerotation) | [Solution](py/asciifigurerotation.py)</br>
 Straightforward 2D array manipulation problem where we must adjust both coordinates and values by applying a 90 degree rotation to the source values.
 </br></br>
