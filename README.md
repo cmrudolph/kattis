@@ -28,6 +28,9 @@ Compute all factor pairs of the specified value using a division test. The facto
 **Anagram Counting | Python** | [Problem](https://open.kattis.com/problems/anagramcounting) | [Solution](py/anagramcounting.py)</br>
 Calculate the total as n! / (n<sub>1</sub>!n<sub>2</sub>!...n<sub>k</sub>!) where the denominator is the product of the factorials of the number of occurrences of each distinct character in the input sequence.
 </br></br>
+**Babylonian Numbers | F#** | [Problem](https://open.kattis.com/problems/babylonian) | [Solution](fs/babylonian.fs)</br>
+Problem involving the interpretation of a string representing a base 60 number. The value is given as a series of separated components in the 0-59 range and the expectation is that we produce the equivalent base 10 value.
+</br></br>
 **Balanced Diet | C** | [Problem](https://open.kattis.com/problems/balanceddiet) | [Solution](c/balanceddiet.c)</br>
 Use recursion to figure out all the possible sums we can encounter by combining values in all possible ways. Without any optimizations this solution is O(2<sup>N</sup>). However, the problem is conducive to dynamic programming since once a subproblem has been solved we can save the result leverage it to avoid redundant work.
 </br></br>
