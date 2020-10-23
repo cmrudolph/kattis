@@ -106,6 +106,9 @@ Simple problem.
 **Planina | Python** | [Problem](https://open.kattis.com/problems/planina) | [Solution](py/planina.py)</br>
 Simple problem.
 </br></br>
+**Printing Costs | F#** | [Problem](https://open.kattis.com/problems/printingcosts) | [Solution](fs/printingcosts.fs)</br>
+String problem involving a char-int conversion and aggregation of the total cost of the string. Pattern matching with hard-coded costs is a simple way to specify the problem rules.
+</br></br>
 **Rain Fall | Python** | [Problem](https://open.kattis.com/problems/rainfall2) | [Solution](py/rainfall2.py)</br>
 Interesting problem where we piece together the formula, then run a guess through it, compare, and refine the guess. Repeating this enough times gets us to right value for our unknown.
 </br></br>
