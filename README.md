@@ -124,6 +124,9 @@ Weighted graph problem where DFS can be used to identify cycles and the cycles s
 **Sheba's Amoebas | Python** | [Problem](https://open.kattis.com/problems/amoebas) | [Solution](py/amoebas.py)</br>
 Work through the search space using recursion, tagging cells along the way. In principle, recursion can overflow the stack in these types of problems, but the search space here is sufficiently small that it is okay.
 </br></br>
+**Soft Passwords | F#** | [Problem](https://open.kattis.com/problems/softpasswords) | [Solution](fs/softpasswords.fs)</br>
+Problem where a given input string needs to be compared with N other derived strings to see whether any of them match. All possible valid matches are derived so a simple "list contains" search can be done
+</br></br>
 **The Calculus of Ada | Python** | [Problem](https://open.kattis.com/problems/ada) | [Solution](py/ada.py)</br>
 Simple recursive implementation with no significant performance requirements.
 </br></br>
