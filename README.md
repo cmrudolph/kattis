@@ -67,6 +67,9 @@ Simple problem.
 **Engineering English | Go** | [Problem](https://open.kattis.com/problems/engineeringenglish) | [Solution](go/engineeringenglish.go)</br>
 Iterate over the strings in the input and use a map to store values we have seen before. A value's existence in the map means we need to replace it with our token value.
 </br></br>
+**FBI Universal Control Numbers | F#** | [Problem](https://open.kattis.com/problems/fbiuniversal) | [Solution](fs/fbiuniversal.fs)</br>
+Problem involving string parsing, character substitutions, conversion between base 10 and base 27, computation and validation of a 'check digit', and then printing results for valid strings.
+</br></br>
 **Foosball Dynasty | Python** | [Problem](https://open.kattis.com/problems/foosball) | [Solution](py/foosball.py)</br>
 Problem has no performance requirements, so Python is fine. Work through the rules, maintaining state properly as we go.
 </br></br>
